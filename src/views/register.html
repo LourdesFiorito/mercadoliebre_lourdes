@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+    <form action="/register" method="POST">
+        <input type="text" name="Nombre y apellido" placeholder="Nombre y apellido">
+        <input type="text" name="Nombre de usuario" placeholder="Nombre de usuario">
+        <input type="email" name="email" placeholder="Email">
+        <input type="date" name="Fecha de nacimiento" placeholder="Fecha de nacimiento">
+        <input type="text" name="domicilio" placeholder="Domicilio">
+        <input type="text" name="perfilUsuario" placeholder="Perfil del usuario">
+        <label>Categorias de interes</label>
+        <div class="categorias">
+        <div>
+            <input type="checkbox" name="categoria" id="electro">
+            <option value="electro">Electro</option>
+        </div>
+        <div>
+            <input type="checkbox" name="categoria" id="moda">
+            <option value="moda">Moda</option>
+        </div>
+        <div>
+            <input type="checkbox" name="categoria" id="hogar">
+            <option value="hogar">Hogar</option>
+        </div>
+       <div>
+        <input type="checkbox" name="categoria" id="jugueteria">
+        <option value="jugueteria">Jugueteria</option>
+       </div>
+        <div>
+            <input type="checkbox" name="vidasana" id="vidasana">
+            <option value="vidasana">Vida sana</option>
+        </div>     
+        </div>
+        <div>
+            <label>Foto de usuario</label>
+            <input type="file" name="imagen" accept=".jpg" id="imagen" placeholder="Foto de usuario"> 
+        </div>
+        <div>
+            <input type="text" name="password" placeholder="Contraseña">
+            <input type="text" name="confirmpassword" placeholder="Confirmar contraseña">
+            <button>
+                <a href="/src/views/home.html">Enviar</a>
+            </button>
+        </div>
+
+    </form>
+
+</body>
+</html>
